@@ -20,29 +20,42 @@
             margin-right: 10px;
         }
         #home {
-    background: url('images/food.jpg') no-repeat center center;
-    background-size: cover;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 300px;  /* Keeps the height of the banner */
-    text-align: center;
-    padding-top: 140px; /* Adjust this to match navbar height */
-}
+            background: url('images/food.jpg') no-repeat center center;
+            background-size: cover;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;  /* Keeps the height of the banner */
+            text-align: center;
+            padding-top: 140px; /* Adjust this to match navbar height */
+        }
 
-#home .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
+        #home .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        /* Add this CSS block to style the links in the menu section */
+        #menu .card-body h5 a {
+            color: black; /* Set the text color to black */
+            text-decoration: none; /* Remove the underline */
+        }
+
+        #menu .card-body h5 a:hover {
+            /* Optional: Add styling for when the mouse hovers over the link */
+            color: #333; /* Example: Slightly darker black on hover */
+            text-decoration: none; /* Ensure no underline on hover */
+        }
+        /* End of CSS block */
+
     </style>
 </head>
 <body>
- <!-- Navbar -->
  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
   <div class="container-fluid">
       <a class="navbar-brand" href="#home">
@@ -62,7 +75,6 @@
   </div>
 </nav>
 
-    <!-- Home Section -->
     <section id="home">
         <div class="container">
           <h1>Welcome to The Juice Laundry</h1>
@@ -70,57 +82,60 @@
         </div>
       </section>
 
-    <!-- Menu Section -->
-    <section id="menu" class="container">
+      <section id="menu" class="container">
         <h2 class="text-center">Our Menu</h2>
         <p class="text-center">Explore our menu options by clicking below. </p>
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
-                <div class="card">
-                    <img src="images/387-rinse-refresh.jpg" class="card-img-top" alt="Smoothies">
-                    <div class="card-body">
-                        <h5 class="card-title">Superfood Smoothies</h5>
-                        <p class="card-text">Nutrient-rich smoothies for a healthy boost.</p>
+                <a href="smoothies.html" class="card-link" style="text-decoration: none; color: inherit;">
+                    <div class="card">
+                        <img src="images/387-rinse-refresh.jpg" class="card-img-top" alt="Smoothies">
+                        <div class="card-body">
+                            <h5 class="card-title">Superfood Smoothies</h5>
+                            <p class="card-text">Nutrient-rich smoothies for a healthy boost.</p>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="col">
-                <div class="card">
-                    <img src="images/475-breakfast-bowl.jpg" class="card-img-top" alt="Boosters">
-                    <div class="card-body">
-                        <h5 class="card-title">Boosters</h5>
-                        <p class="card-text">Power-packed shots to energize your day.</p>
+                <a href="boosters.html" class="card-link" style="text-decoration: none; color: inherit;">
+                    <div class="card">
+                        <img src="images/475-breakfast-bowl.jpg" class="card-img-top" alt="Boosters">
+                        <div class="card-body">
+                            <h5 class="card-title">Boosters</h5>
+                            <p class="card-text">Power-packed shots to energize your day.</p>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="col">
-                <div class="card">
-                    <img src="images/416-super.jpg"card-img-top" alt="Acai Bowls">
-                    <div class="card-body">
-                        <h5 class="card-title">Acai Bowls & More</h5>
-                        <p class="card-text">Delicious bowls filled with goodness.</p>
+                <a href="bowls.html" class="card-link" style="text-decoration: none; color: inherit;">
+                    <div class="card">
+                        <img src="images/416-super.jpg"card-img-top" alt="Acai Bowls">
+                        <div class="card-body">
+                            <h5 class="card-title">Acai Bowls & More</h5>
+                            <p class="card-text">Delicious bowls filled with goodness.</p>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- About Us Section -->
     <section id="about" class="py-5">
         <div class="container">
           <div class="row">
-            <!-- About Us Content -->
             <div class="col-md-6">
               <h2>About Us</h2>
               <p>At The Juice Laundry, we believe in the power of pure, organic ingredients to fuel a healthier lifestyle. Founded with a passion for wellness, our mission is to provide delicious, nutrient-packed juices, smoothies, and acai bowls made from the freshest, sustainably sourced produce. We carefully craft each blend to maximize flavor and health benefits, ensuring that every sip supports your body and mind. Whether you're looking for an energizing morning boost, a post-workout refresher, or a wholesome meal alternative, we have something for you. Join us on our journey to cleaner, greener, and tastier living—one bottle at a time!</p>
+              <p class="mt-2"><strong>Note:</strong> I began this website by using one of the Bootstrap templates provided by Prof. Rossetti. Then, I used Google's Gemini and ChatGPT for advice and tweaks.</p>
             </div>
-   <!-- Location & Hours -->
    <div class="col-md-6 text-md-end">
     <h4>Location:</h4>
     <h5>Historic Coca-Cola Building</h5>
     <p>722 Preston Ave Ste 105<br>Charlottesville, VA 22903</p>
     <p><strong>Ph.: 434-234-3044</strong></p>
-    
+
     <h4>Opening Hours:</h4>
     <h5>Monday - Friday</h5>
     <p>8:00 am - 3:00 pm</p>
@@ -130,7 +145,6 @@
 </div>
 </div>
 </section>
-    <!-- Footer -->
     <footer class="text-center py-3">
         <hr>
         &copy; 2025 The Juice Laundry | Designed by Lara Henriquez Pineda
